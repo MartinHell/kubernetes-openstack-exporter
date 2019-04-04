@@ -1,0 +1,13 @@
+clouds:
+ default:
+   region_name: 'RegionOne'
+   identity_api_version: 3
+   identity_interface: public
+   auth:
+     username: ''
+     password: ''
+     project_name: 'admin'
+     project_domain_name: 'admin_domain'
+     user_domain_name: 'admin_domain'
+     auth_url: https://your-auth-url:5000/v3
+     verify: false
