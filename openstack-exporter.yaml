@@ -14,6 +14,9 @@ spec:
     metadata:
       labels:
         infra: openstack-exporter
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "9180"
     spec:
       containers:
       - name: openstack-exporter
