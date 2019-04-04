@@ -18,6 +18,9 @@ spec:
       containers:
       - name: openstack-exporter
         image: quay.io/niedbalski/openstack-exporter:v0.0.7
+        args:
+        - default
+        - --disable-service.volume
         ports:
         - containerPort: 9180
           protocol: TCP
